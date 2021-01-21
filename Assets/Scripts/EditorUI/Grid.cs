@@ -21,8 +21,8 @@ public class Grid : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space)) // WIP: Need to change the input, otherwise will conflict when writing inside nodes
             GoToCenter();
 
-        if (Input.GetMouseButtonDown(1))
-            CreateNode();
+        //if (Input.GetMouseButtonDown(1))
+        //    CreateNode();
 
         if (Input.GetMouseButtonDown(2))
             m_mouseFollowingBehaviour.ActivateBehaviour();
@@ -36,10 +36,10 @@ public class Grid : MonoBehaviour
         m_rectTransform.localPosition = Vector2.zero;
     }
 
-    private void CreateNode()
+    public void CreateNode()
     {
         GameObject newNode = Instantiate<GameObject>(m_nodePrefab);
         newNode.transform.SetParent(transform);
-        newNode.transform.localPosition = new Vector3(0f, 0f, 0f);
+        newNode.transform.position = Input.mousePosition;// new Vector3(0f, 0f, 0f);
     }
 }
