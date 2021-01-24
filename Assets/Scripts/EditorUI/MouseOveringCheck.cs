@@ -13,12 +13,12 @@ public class MouseOveringCheck : MonoBehaviour, IPointerEnterHandler, IPointerEx
     public void OnPointerEnter(PointerEventData eventData)
     {
         m_mouseOver = true;
-        Debug.Log("Mouse enter " + gameObject.name);
+        //Debug.Log("Mouse enter " + gameObject.name);
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
         m_mouseOver = false;
-        Debug.Log("Mouse exit " + gameObject.name);
+        //Debug.Log("Mouse exit " + gameObject.name);
     }
 }

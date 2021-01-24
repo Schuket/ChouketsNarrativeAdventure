@@ -29,7 +29,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7473192223432118233}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -122,9 +122,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7473192223432118235}
-        m_MethodName: set_interactable
-        m_Mode: 6
+      - m_Target: {fileID: 7473192223432118239}
+        m_MethodName: OnClick
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -145,6 +145,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62fe03c44b5f5e4ab19a828e2f5f457, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_nameText: {fileID: 7473192223534040775}
 --- !u!114 &7473192223432118236
 MonoBehaviour:
   m_ObjectHideFlags: 0
